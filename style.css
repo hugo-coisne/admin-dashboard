@@ -122,4 +122,27 @@ body {
   background-color: beige;
   grid-column: 2/3;
   background-color: #ddd;
+  display:grid;
+  grid-template-areas: 
+  "proj ann"
+  "proj trend";
+  grid-template-columns: 5fr 2fr;
+}
+
+#yourprojects {
+    background-color: red;
+    grid-area:proj;
+    padding:10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#announcements {
+    background-color: yellow;
+    grid-area:ann;
+}
+
+#trending {
+    background-color: greenyellow;
+    grid-area:trend;
 }
